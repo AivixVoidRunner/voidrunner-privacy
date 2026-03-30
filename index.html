@@ -3,45 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - VOID RUNNER</title>
+    <title>Privacy Policy | VOID RUNNER</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #2c3e50; }
-        a { color: #3498db; }
+        :root {
+            --neon-cyan: #00ffff;
+            --bg-dark: #0a0b10;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+            --text-dim: #8b949e;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: var(--bg-dark);
+            margin: 0; 
+            padding: 0; 
+        }
+
+        .container {
+            max-width: 850px; 
+            margin: 40px auto; 
+            padding: 40px;
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--neon-cyan);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 { 
+            color: var(--neon-cyan); 
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+
+        h2 { 
+            color: var(--neon-cyan); 
+            border-left: 4px solid var(--neon-cyan);
+            padding-left: 15px;
+            margin-top: 40px;
+            font-size: 1.4em;
+        }
+
+        p, li { color: var(--text-main); font-size: 1.05em; }
+        
+        strong { color: var(--neon-cyan); }
+
+        ul { list-style: none; padding: 0; }
+        ul li { 
+            padding: 10px 15px; 
+            background: rgba(255,255,255,0.03); 
+            margin-bottom: 8px; 
+            border-radius: 6px;
+        }
+
+        a { 
+            color: var(--neon-cyan); 
+            text-decoration: none; 
+            transition: 0.3s;
+            border-bottom: 1px dashed var(--neon-cyan);
+        }
+        
+        a:hover { opacity: 0.7; }
+
+        .footer-info {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            font-size: 0.9em;
+            color: var(--text-dim);
+            text-align: center;
+        }
+
+        .contact-box {
+            background: rgba(0, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 10px; padding: 20px; }
+            h1 { font-size: 1.8em; }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy</h1>
-    <p><strong>App Name:</strong> VOID RUNNER</p>
-    
-    <p>This privacy policy applies to the <strong>VOID RUNNER</strong> app (hereby referred to as "Application") for mobile devices. The Application is provided as an Ad-Supported game and is intended for use "as is".</p>
+    <div class="container">
+        <header>
+            <h1>VOID RUNNER</h1>
+            <p style="color: var(--text-dim); margin-top: 10px;">Privacy Policy</p>
+        </header>
+        
+        <p>This privacy policy applies to the <strong>VOID RUNNER</strong> mobile application (hereby referred to as "Application"). The Application is provided as an Ad-Supported game and is intended for use "as is".</p>
 
-    <h2>1. Information Collection and Use</h2>
-    <p>We do not collect any personally identifiable information (such as your name or physical address) directly. However, the Application uses third-party services that may collect information used to identify your device and improve the gameplay experience.</p>
-    
-    <ul>
-        <li><strong>Local Storage:</strong> Your game progress, in-game currency, and purchased items are stored locally on your device.</li>
-        <li><strong>Google Play Games Services:</strong> The Application uses Google Play Services for global leaderboards. When you sign in, Google may collect your unique player ID, scores, and achievements to display on global rankings.</li>
-        <li><strong>Advertising (Google AdMob):</strong> The Application uses Google AdMob to display ads. AdMob may collect and use your Advertising ID and IP address to serve personalized or non-personalized ads, and for analytics purposes.</li>
-    </ul>
+        <h2>1. Information Collection and Use</h2>
+        <p>We do not collect any personally identifiable information (such as your name or physical address) напрямую. However, the Application uses third-party services that may collect information used to identify your device.</p>
+        
+        <ul>
+            <li><strong>Local Storage:</strong> Your game progress, currency, and items are stored locally on your device.</li>
+            <li><strong>Google Play Games Services:</strong> Used for global leaderboards. Google may collect your player ID and scores.</li>
+            <li><strong>Advertising (Google AdMob):</strong> Uses your Advertising ID to serve ads and for analytics.</li>
+        </ul>
 
-    <h2>2. Third-Party Service Providers</h2>
-    <p>Links to the privacy policies of third-party service providers used by the Application:</p>
-    <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543?hl=ru" target="_blank">AdMob</a></li>
-    </ul>
+        <h2>2. Third-Party Service Providers</h2>
+        <p>Links to the privacy policies of third-party service providers used by the Application:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob Privacy Policy</a></li>
+        </ul>
 
-    <h2>3. Data Safety and Security</h2>
-    <p>We value your trust. Game data is saved locally on your device. Leaderboard data is transmitted securely to Google's servers. We do not sell, rent, or share any information with third parties outside of the specific Google services mentioned above.</p>
+        <h2>3. Data Safety and Security</h2>
+        <p>Game data is saved locally on your device. Leaderboard data is transmitted securely to Google's servers. We do not sell, rent, or share any information with third parties.</p>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>Our Services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us or our third-party partners with personal information, please contact us.</p>
+        <h2>4. Children’s Privacy</h2>
+        <p>Our Services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. These changes are effective immediately after they are posted on this page.</p>
+        <h2>5. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Changes are effective immediately after they are posted on this page.</p>
 
         <h2>6. Contact Us & Data Deletion</h2>
-    <p>If you have any questions about this Privacy Policy or wish to request the deletion of your data (such as your leaderboard scores), please contact us. We will process your request within 48 hours.</p>
-    <p><strong>Email:</strong>aivixgames@gmail.com</p>
+        <div class="contact-box">
+            <p>If you have any questions or wish to request the deletion of your data (leaderboard scores), please contact us. We process requests within 48 hours.</p>
+            <p><strong>Email:</strong> aivixgames@gmail.com</p>
+        </div>
+
+        <div class="footer-info">
+            &copy; 2026 VOID RUNNER. All rights reserved. Last updated: March 30, 2026.
+        </div>
+    </div>
+
+</body>
+</html>
